@@ -9,13 +9,13 @@ from utils import (Dataset, Iterator, save_load_means, subtract_channel_means,
 
 if __name__ == '__main__':
 
-    data_dir = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/'#'data/datasets/VOCdevkit/VOC2012/'
-    testset_filename = osp.join(data_dir, 'dataset1.txt')
+    data_dir = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/val/'
+    testset_filename = osp.join(data_dir, 'dataset1_desc.txt')
     images_dir = osp.join(data_dir, 'Images/')
     labels_dir = osp.join(data_dir, 'Labels/')
-    demo_dir = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/outputs/'#'data/demos/deeplab/resnet_101_voc2012/'
-    models_dir = 'E:/PRO/WBC_Segment/DeepLab-V3/data/models/custom_wbc/resnet_101_voc2012'#'data/models/deeplab/resnet_101_voc2012/'
-    model_filename = 'resnet_101_0.4011.ckpt'
+    demo_dir = '/content/WBC_Segmentation_DeepLabV3/output'
+    models_dir = '/content/WBC_Segmentation_DeepLabV3/data/models/custom_wbc/resnet_101_voc2012'
+    model_filename = 'resnet_101_0.7368.ckpt'
 
     channel_means = save_load_means(means_filename='channel_means.npz', image_filenames=None)
 
