@@ -151,13 +151,13 @@ if __name__ == '__main__':
 
     network_backbone_default = 'resnet_101'
     pre_trained_model_default = 'data/models/pretrained/resnet_101/resnet_v2_101.ckpt'
-    trainset_filename_default = 'data/custom_dataset/dataset1.txt' #'data/datasets/VOCdevkit/VOC2012/ImageSets/Segmentation/train.txt'
-    valset_filename_default = 'data/custom_dataset/dataset1.txt' #'data/datasets/VOCdevkit/VOC2012/ImageSets/Segmentation/val.txt'
-    images_dir_default = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/Images/' #'data/datasets/VOCdevkit/VOC2012/JPEGImages/'
-    labels_dir_default = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/Labels/' #'data/datasets/VOCdevkit/VOC2012/SegmentationClass/'
-    trainset_augmented_filename_default = 'data/custom_dataset/dataset1.txt'
-    images_augmented_dir_default = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/Images/'# 'data/datasets/SBD/benchmark_RELEASE/dataset/img/'
-    labels_augmented_dir_default = 'E:/PRO/WBC_Segment/DeepLab-V3/data/custom_dataset/Labels/'# 'data/datasets/SBD/benchmark_RELEASE/dataset/cls/'
+    trainset_filename_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/dataset1_desc.txt' 
+    valset_filename_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/val/dataset1_desc.txt' 
+    images_dir_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/Images/' 
+    labels_dir_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/Labels/' 
+    trainset_augmented_filename_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/dataset1_desc.txt'
+    images_augmented_dir_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/Images/' 
+    labels_augmented_dir_default = '/content/WBC_Segmentation_DeepLabV3/DeepLabV3-data/train/Labels/'
     model_dir_default = 'data/models/custom_wbc/{}_voc2012/'.format(network_backbone_default)
     log_dir_default = 'data/logs/deeplab/'
     random_seed_default = 0
